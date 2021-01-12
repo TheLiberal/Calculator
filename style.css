@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    outline: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    padding: 5rem;
+    height: 100vh;
+    width: 100vw;
+    background: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    cursor: url("circle.svg"), auto;
+    overflow: hidden;
+}
+
+label {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=text] {
+    -moz-appearance: textfield;
+    font-size: 1.8rem;
+}
+
+
+.display {
+    height: 3rem;
+    width: 50vw;
+    padding: 1rem;
+    background: inherit;
+    cursor: url("corner-up-left.svg"), auto;
+    border: 0.2rem solid #fa9581;
+    border-radius: 50px;
+    caret-color: rgba(255, 255, 255, 0);
+    box-shadow: 4px 4px 8px #fa95813a;
+    transition: 0.58s;
+}
+
+.display:focus {
+    transform: scale(1.25);
+    box-shadow: 8px 8px 16px #fa958179;
+    transition: 0.8s;
+}
+
+.error-message {
+    display: none;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #e41616;
+    transition: 0.8s;
+}
+
+.displayed {
+    display: block;
+}
+
+.calculator {
+    padding: 1rem;
+    margin: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-buttons {
+    padding: 1rem;
+    width: 80vw;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.delete-icon {
+    background: url("delete.svg");
+    background-repeat: no-repeat;
+    display: block;
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
+.clear-icon {
+    background: url("trash.svg");
+    background-repeat: no-repeat;
+    display: block;
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
+.add-icon {
+    background: url("plus.svg");
+    background-repeat: no-repeat;
+    display: block;
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
+.subtract-icon {
+    background: url("minus.svg");
+    background-repeat: no-repeat;
+    display: block;
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
+.multiply-icon {
+    background: url("x.svg");
+    background-repeat: no-repeat;
+    display: block;
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
+.divide-icon {
+    background: url("divide.svg");
+    background-repeat: no-repeat;
+    display: block;
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
+span {
+    font-size: 2.2rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.equals {
+    height: 7vw;
+    font-weight: 700;
+    font-size: 1.8rem;
+    width: 100%;
+    max-width: 60vw;
+    border-radius: 100px;
+}
+
+.bottom-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 8vw;
+    height: 8vw;
+    max-width: 180px;
+    max-height: 180px;
+    background: #fa9581;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 8px #fa95813a;
+}
+
+button:hover {
+    background: #fa9581c5;
+    box-shadow: 2px 4px 8px #fa95811c;
+    cursor: url("circle.svg"), auto;
+}
+
+@media(max-width: 860px) {
+    .numbers {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    button {
+        margin: 0.3rem;
+    }
+
+    i {
+        transform: scale(0.75);
+    }
+}

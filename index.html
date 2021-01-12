@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="calculator-favicon.svg" />
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator with vanilla JS</title>
+</head>
+
+<body>
+
+    <article class="calculator">
+
+        <label for="display">Display</label>
+        <input type="text" class="display">
+
+        <div class="error-message">Incorrect input, please fix your input and try again</div>
+
+        <div class="calculator-buttons">
+            <div class="row">
+                <div><button class="seven"><span class="numbers">7</span></button></div>
+                <div><button class="eight"><span class="numbers">8</span></button></div>
+                <div><button class="nine"><span class="numbers">9</span></button></div>
+                <div><button class="delete"><i class="delete-icon"></i></button></div>
+                <div><button class="clear"><i class="clear-icon"></i></button></div>
+            </div>
+            <div class="row">
+                <div><button class="four"><span class="numbers">4</span></button></div>
+                <div><button class="five"><span class="numbers">5</span></button></div>
+                <div><button class="six"><span class="numbers">6</span></button></div>
+                <div><button class="add"><i class="add-icon"></i></button></div>
+                <div><button class="subtract"><i class="subtract-icon"></i></button></div>
+            </div>
+            <div class="row">
+                <div><button class="one"><span class="numbers">1</span></button></div>
+                <div><button class="two"><span class="numbers">2</span></button></div>
+                <div><button class="three"><span class="numbers">3</span></button></div>
+                <div><button class="multiply"><i class="multiply-icon"></i></button></div>
+                <div><button class="divide"><i class="divide-icon"></i></button></div>
+            </div>
+            <div>
+                <div class="bottom-button">
+                    <button class="equals">=</button>
+                </div>
+            </div>
+        </div>
+
+
+    </article>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
