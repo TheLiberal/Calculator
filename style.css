@@ -6,6 +6,7 @@
     box-sizing: border-box;
     flex-shrink: 0;
     outline: none;
+    touch-action: manipulation;
 }
 
 ol,
