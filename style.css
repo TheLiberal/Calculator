@@ -204,6 +204,8 @@ button:hover {
 
     button {
         margin: 0.3rem;
+        width: 13vw;
+        height: 13vw;
     }
 
     i {
